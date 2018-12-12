@@ -46,3 +46,12 @@ suites:
         base:
           '*':
               - fujitsu.fujitsu_javapos
+
+  - name: datalogic
+    provisioner:
+      grains:
+        device: gryphon-gd4400
+      state_top:
+        base:
+          '*':
+              - datalogic.datalogic_javapos_dls

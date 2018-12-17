@@ -55,3 +55,12 @@ suites:
         base:
           '*':
               - datalogic.datalogic_javapos_dls
+
+  - name: diebold-nixdorf
+    provisioner:
+      grains:
+        device: diebold-nixdorf
+      state_top:
+        base:
+          '*':
+              - diebold-nixdorf.diebold-nixdorf_javapos

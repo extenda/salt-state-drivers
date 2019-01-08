@@ -1,0 +1,3 @@
+libusb:
+  pkg.installed
+

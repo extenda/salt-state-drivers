@@ -64,3 +64,12 @@ suites:
         base:
           '*':
               - diebold-nixdorf.diebold-nixdorf_javapos
+
+  - name: ncr
+    provisioner:
+      grains:
+        device: ncr
+      state_top:
+        base:
+          '*':
+              - ncr.ncr_scanner_scale

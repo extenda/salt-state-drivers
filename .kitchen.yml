@@ -82,3 +82,12 @@ suites:
         base:
           '*':
               - ncr.ncr_scanner_scale
+
+  - name: star
+    provisioner:
+      grains:
+        device: starbcs10
+      state_top:
+        base:
+          '*':
+              - star.starbcs10

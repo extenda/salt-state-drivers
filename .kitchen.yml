@@ -38,6 +38,15 @@ suites:
           '*':
               - epson.epson_javapos_adk
 
+  - name: epsonfiscal
+    provisioner:
+      grains:
+        device: uposfiscalprinter
+      state_top:
+        base:
+          '*':
+              - epsonfiscal.epsonfiscal_javapos
+
   - name: fujitsu
     provisioner:
       grains:

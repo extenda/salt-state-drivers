@@ -7,3 +7,4 @@
 move_folder:
   cmd.run:
     - name: 'mkdir -p /opt/starbcs10/ && cp -r /tmp/starbsc10javapos_1.13.3_linux_64bit/* "$_"'
+    - unless: 'ls /opt/starbcs10'
